@@ -9,15 +9,16 @@
   
   <header>
     <ul>
-      <li><button>Home</button></li>
-      <li><button>Contact</button></li>
-      <li><button>About</button></li>
+      <li><button onclick="router.loadRoutes('')">Home</button></li>
+      <li><button onclick="router.loadRoutes('contact')">Contact</button></li>
+      <li><button onclick="router.loadRoutes('about')">About</button></li>
     </ul>
   </header>
 
-  <div>
-    <h1>Hello Little Person <3</h1>
-  </div>
+  <div data-router></div>
 
+  <script src="./router.js"></script>
+  <script src="./routes.js"></script>
+  <script src="./index.js"></script>
 </body>
 </html>
